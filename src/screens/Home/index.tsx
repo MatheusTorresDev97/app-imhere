@@ -21,12 +21,12 @@ const Home = () => {
 
     Alert.alert("Remover", `Deseja remover o participante ${name}?`, [
       {
-        text: "Sim",
-        onPress: () => setParticipants(prevState => prevState.filter(participant => participant !== name))
-      },
-      {
         text: "Não",
         style: "cancel"
+      },
+      {
+        text: "Sim",
+        onPress: () => setParticipants(prevState => prevState.filter(participant => participant !== name))
       }
     ])
   }
